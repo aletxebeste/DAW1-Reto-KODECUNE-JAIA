@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+        <path d="M 410 375 Q 410 320, 450 300 Q 490 280, 500 300 Q 510 280, 550 300 Q 590 320, 590 375" fill="none" stroke="#0a1e3d" stroke-width="18" stroke-linecap="round"/>
+        <path d="M 410 375 Q 410 430, 450 450 Q 490 470, 500 450 Q 510 470, 550 450 Q 590 430, 590 375" fill="none" stroke="#0a1e3d" stroke-width="18" stroke-linecap="round"/>
+        <line x1="500" y1="300" x2="500" y2="450" stroke="#0a1e3d" stroke-width="18"/>
+        <line x1="445" y1="340" x2="445" y2="410" stroke="#0a1e3d" stroke-width="14"/>
+        <line x1="555" y1="340" x2="555" y2="410" stroke="#0a1e3d" stroke-width="14"/>
+        <text x="500" y="720" font-family="Arial, sans-serif" font-size="88" font-weight="300" fill="#0a1e3d" text-anchor="middle" letter-spacing="8">SYNAPSETECH</text>
+      </svg>

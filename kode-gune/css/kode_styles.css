@@ -3,7 +3,11 @@
         --dark-blue: #1A1A2E; 
         --text-color: #E0E0E0;
     }
-
+    @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+    }
     body{
         margin: 0; 
         padding: 0;
@@ -12,6 +16,9 @@
         background-color: #0c1725;
         font-family: 'Roboto', sans-serif;
         color: var(--text-color);
+        background: linear-gradient(270deg, #0e0e2b, #0c1725, #131322);
+        background-size: 600% 600%;
+        animation: gradientShift 30s ease infinite;
     }
     .logo{
         position: absolute;
@@ -30,6 +37,9 @@
         background-color: #0c1725;
         height: 255px;
         position: relative;
+        background: linear-gradient(270deg, #0e0e2b, #0c1725, #131322);
+        background-size: 600% 600%;
+        animation: gradientShift 30s ease infinite;
     }
 
     .hero-section {
@@ -52,7 +62,6 @@
         text-align: center;
         transform: translate(-50%, -50%);
     }
-
     .nav-link-left {
         position: absolute;
         right: 50%; 
@@ -61,7 +70,6 @@
         margin-right: 165px; 
         z-index: 200;
     }
-
     .nav-link-right {
         position: absolute;
         left: 50%; 
@@ -70,20 +78,17 @@
         margin-left: 165px; 
         z-index: 200;
     }
-
     .nav-link-left ul,
     .nav-link-right ul {
         list-style: none; 
         padding: 0;
         margin: 0;
     }
-
     .nav-link-left ul li,
     .nav-link-right ul li {
         display: inline-block; 
         margin: 0 15px;       
     }
-
     .nav-link-left a,
     .nav-link-right a {
         text-decoration: none;
@@ -102,25 +107,23 @@
         0 0 10px var(--neon-green),
     }
     .partners-section {
-        background-color: #f4f4f4;
-        padding: 30px 10px;
-        max-width: 100%;
+        max-width: 800px;
         margin: 0 auto;
-        text-align: center; 
+        padding: 15px 5px;
+        background-color: #f4f4f4;
+        text-align: center;
+        border-radius: 10px;
     }
-
     .partners-section h2 {
-        font-size: 1.8em;
+        font-size: 1.3em;
         margin-bottom: 40px;
-        color: #1a1a1a;
+        color: #1A1A2E;
     }
-
     .logo-gallery {
         max-width: 1000px;
         margin: 0 auto;
         text-align: center;
     }
-
     .logo-item {
         
         display: inline-block; 
@@ -128,20 +131,16 @@
         margin: 0 10px;
         vertical-align: middle; 
     }
-
     .logo-item img {
         
         max-width: 100%;
         height: auto;
-        opacity: 0.6;
-        transition: opacity 0.3s;
+        opacity: 0.8;
+        transition: opacity 0.2s;
     }
-
     .logo-item img:hover {
         opacity: 1; 
     }
-
-
     .clearfix {
         clear: both;
     }
