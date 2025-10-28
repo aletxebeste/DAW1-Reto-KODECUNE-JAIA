@@ -101,3 +101,47 @@
         0 0 5px var(--neon-green),
         0 0 10px var(--neon-green),
     }
+    .partners-section {
+        background-color: #f4f4f4;
+        padding: 30px 10px;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center; 
+    }
+
+    .partners-section h2 {
+        font-size: 1.8em;
+        margin-bottom: 40px;
+        color: #1a1a1a;
+    }
+
+    .logo-gallery {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .logo-item {
+        
+        display: inline-block; 
+        width: 15%; 
+        margin: 0 10px;
+        vertical-align: middle; 
+    }
+
+    .logo-item img {
+        
+        max-width: 100%;
+        height: auto;
+        opacity: 0.6;
+        transition: opacity 0.3s;
+    }
+
+    .logo-item img:hover {
+        opacity: 1; 
+    }
+
+
+    .clearfix {
+        clear: both;
+    }
