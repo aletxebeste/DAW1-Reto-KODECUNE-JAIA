@@ -90,8 +90,38 @@
         0 0 10px var(--neon-green),
     }
     .proximos-eventos{
+        width: 100%;
         
     }
+    h1,h3,p{
+        text-align: center;
+    }
+    .eventos{
+    width: 48%; 
+    float: left; 
+    margin-left: 1.2%;
+    margin-bottom: 40px; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    background-color: black;
+    border: 1px solid rgba(252, 252, 252, 0.192); 
+    }
+    .videos { 
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden; 
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    }
+    .videos iframe {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    }
+
     .clearfix {
         clear: both;
     }
