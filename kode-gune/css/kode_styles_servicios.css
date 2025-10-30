@@ -1,0 +1,125 @@
+    :root {
+        --neon-green: #67e251;
+        --dark-blue: #1A1A2E; 
+        --text-color: #E0E0E0;
+    }
+
+    body{
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+        
+    }
+    #background-video {
+        position: fixed;
+        top: 0;      
+        left: 0;     
+        width: 100vw; 
+        height: 100vh; 
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+    .main-header,.seccion-eventos,.proximos-eventos{
+        position: relative;
+        z-index: 1;
+    }
+    .logo{
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+    }
+    .logo-img{
+        height: 250px;
+        width: auto;
+        vertical-align: middle;
+        
+    }
+    .main-header{
+        height: 255px;
+        position: relative;
+        
+    }
+    .nav-link-left {
+        position: absolute;
+        right: 50%; 
+        top: 50%;
+        transform: translateY(-50%); 
+        margin-right: 165px; 
+        z-index: 200;
+    }
+    .nav-link-right {
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        transform: translateY(-50%); 
+        margin-left: 165px; 
+        z-index: 200;
+    }
+    .nav-link-left ul,
+    .nav-link-right ul {
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+    }
+    .nav-link-left ul li,
+    .nav-link-right ul li {
+        display: inline-block; 
+        margin: 0 15px;       
+    }
+    .nav-link-left a,
+    .nav-link-right a {
+        text-decoration: none;
+        font-size: 1.1em;
+        color: #fff;
+        padding: 10px 0;
+        display: block;
+        transition: all 0.2s ease-in-out; 
+    }
+    .nav-link-left a:hover,
+    .nav-link-right a:hover {
+        color: var(--neon-green); 
+        font-weight: bold; 
+        text-shadow: 
+        0 0 5px var(--neon-green),
+        0 0 10px var(--neon-green),
+    }
+    .filosofia {
+        position: relative;
+        z-index: 1;
+        padding: 80px 20px;
+        background-color: transparent;
+        text-align: center;
+    }
+    .tablas{
+        max-width: 1200px;
+        margin: 0 auto; 
+        overflow: hidden;
+    }
+    .tabla {
+        width: 48%; 
+        float: left; 
+        height: auto;
+        padding: 40px 15px;
+        box-sizing: border-box; 
+        background-color: #e3e7eeeb; 
+        border: 1px solid var(--neon-green);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-right: 2%;
+        margin-top: 5%;
+        color: black;
+        text-align: justify;
+    }
+    .tabla:last-child {
+        margin-right: 0; 
+    }
+
+    .clearfix {
+        clear: both;
+    }

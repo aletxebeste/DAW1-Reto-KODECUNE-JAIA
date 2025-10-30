@@ -2,6 +2,7 @@
         --neon-green: #67e251;
         --dark-blue: #1A1A2E; 
         --text-color: #E0E0E0;
+        --text-color-tabla: #000000;
     }
 
     body{
@@ -110,11 +111,48 @@
         0 0 5px var(--neon-green),
         0 0 10px var(--neon-green),
     }
+    .filosofia {
+        position: relative;
+        z-index: 1;
+        padding: 80px 20px;
+        background-color: transparent;
+        text-align: center;
+    }
+    .tablas{
+        max-width: 1200px;
+        margin: 0 auto; 
+        overflow: hidden;
+    }
+    .tabla {
+        width: 32%; 
+        float: left; 
+        height: auto;
+        padding: 25px 15px;
+        box-sizing: border-box; 
+        background-color: #e3e7eeeb; 
+        border: 1px solid var(--neon-green);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-right: 2%;
+        color: var(--text-color-tabla);
+        text-align: left;
+        
+
+    }
+    .tabla:last-child {
+        margin-right: 0; 
+    }
+    .tabla h3{
+        text-align: center;
+    }
+    .tabla p{
+        padding-left: 6px;
+    }
     .partners-section {
-        max-width: 800px;
+        width:100%;
         margin: 0 auto;
         padding: 15px 5px;
-        background-color: #f4f4f4;
+        background-color: #f4f4f4e9;
         text-align: center;
         border-radius: 10px;
     }
