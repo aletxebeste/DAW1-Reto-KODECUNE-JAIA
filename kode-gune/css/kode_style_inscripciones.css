@@ -1,0 +1,171 @@
+    :root {
+        --neon-green: #67e251;
+        --dark-blue: #1A1A2E; 
+        --text-color: #E0E0E0;
+    }
+
+    body{
+        margin: 0; 
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0c1725;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+    }
+    
+  /* Declaración de la fuente */
+@font-face {
+    font-family: 'Rexia Rg';
+    src: url('RexiaRg.woff') format('woff'),
+         url('RexiaRg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'Rexia Rg', sans-serif;
+}
+h2 {
+        font-family: 'Orbitron', sans-serif;
+
+}
+   
+
+    .logo{
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+    }
+    .logo-img{
+        height: 250px;
+        width: auto;
+        vertical-align: middle;
+        
+    }
+    .main-header{
+        background-color: #0c1725;
+        height: 130px;
+        position: relative;
+    }
+
+    .hero-content h1{
+        margin-bottom: 40px;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2; 
+        max-width: 800px;
+        padding: 0 20px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-link-left {
+        position: absolute;
+        right: 50%; 
+        top: 50%;
+        transform: translateY(-50%); 
+        margin-right: 165px; 
+        z-index: 200;
+    }
+
+    .nav-link-right {
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        transform: translateY(-50%); 
+        margin-left: 165px; 
+        z-index: 200;
+    }
+
+    .nav-link-left ul,
+    .nav-link-right ul {
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link-left ul li,
+    .nav-link-right ul li {
+        display: inline-block; 
+        margin: 0 15px;       
+    }
+
+    .nav-link-left a,
+    .nav-link-right a {
+        text-decoration: none;
+        font-size: 1.1em;
+        color: #fff;
+        padding: 10px 0;
+        display: block;
+        transition: all 0.2s ease-in-out; 
+    }
+    .nav-link-left a:hover,
+    .nav-link-right a:hover {
+        color: var(--neon-green); 
+        font-weight: bold; 
+        text-shadow: 
+        0 0 5px var(--neon-green),
+        0 0 10px var(--neon-green),
+    }
+   /* Banner */
+/* Banner */
+.banner {
+    width: 100%;
+    height: 300px;
+    background: url('../../img/bannerinscripciones.png') no-repeat center center;
+    background-size: cover;
+    position: relative; /* necesario para posicionar el overlay */
+}
+
+/* Overlay centrado */
+.banner-overlay {
+    position: absolute;       /* se posiciona respecto al banner */
+    top: 50%;                 /* 50% desde la parte superior */
+    left: 50%;                /* 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* centra vertical y horizontal */
+    text-align: center;       /* centra el texto */
+    padding: 0px;          /* para que no toque los bordes en pantallas pequeñas */
+    box-sizing: border-box;
+}
+
+/* Texto principal */
+.banner-overlay h1 {
+    font-size: 45px;
+    color: #67e251;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+}
+
+/* Texto secundario */
+.banner-overlay p {
+    font-size: 17px;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+/* Botón */
+.banner-overlay .btn {
+    background-color: var(--neon-green);
+    color: #0c1725;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+   
+   
+}
+
+.banner-overlay .btn:hover {
+    background-color: #4cd033;
+    box-shadow: 0 0 15px var(--neon-green);
+
+}
+
+
