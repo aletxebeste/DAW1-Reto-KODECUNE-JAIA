@@ -3,13 +3,12 @@
         --dark-blue: #1A1A2E; 
         --text-color: #E0E0E0;
     }
-
     body{
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%;
-        font-family: 'Roboto', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         color: var(--text-color);
         
     }
@@ -23,7 +22,7 @@
         object-fit: cover;
         filter: brightness(0.5);
     }
-    .main-header,.seccion-eventos,.proximos-eventos{
+    .main-header{
         position: relative;
         z-index: 1;
     }
@@ -89,37 +88,43 @@
         0 0 5px var(--neon-green),
         0 0 10px var(--neon-green),
     }
-    .filosofia {
-        position: relative;
-        z-index: 1;
-        padding: 80px 20px;
-        background-color: transparent;
-        text-align: center;
+    section {
+    width: 100%; 
+    padding: 60px 25%; 
+    box-sizing: border-box; 
+    position: relative; 
+    z-index: 1;
+    opacity: 1.0; 
     }
-    .tablas{
-        max-width: 1200px;
-        margin: 0 auto; 
-        overflow: hidden;
+    #servicio1, #servicio3 { 
+    background-color: black; 
+    color: #F7F7F7; 
     }
-    .tabla {
-        width: 48%; 
-        float: left; 
-        height: auto;
-        padding: 40px 15px;
-        box-sizing: border-box; 
-        background-color: #e3e7eeeb; 
-        border: 1px solid var(--neon-green);
-        border-radius: 5px;
-        margin-bottom: 20px;
-        margin-right: 2%;
-        margin-top: 5%;
-        color: black;
-        text-align: justify;
+    #servicio2, #servicio4 { 
+    background-color:#25292c; 
+    color: #F7F7F7; 
     }
-    .tabla:last-child {
-        margin-right: 0; 
+    
+    .texto {
+    width: 48%; 
+    float: left; 
+    text-align: left;
     }
-
+    .imagen {
+    width: 48%; 
+    float: right; 
+    text-align: right; 
+    }
+    .imagen img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        vertical-align: middle;
+        object-fit: cover;
+    }
+    .clear {
+    clear: both; 
+    }
     .clearfix {
         clear: both;
     }
