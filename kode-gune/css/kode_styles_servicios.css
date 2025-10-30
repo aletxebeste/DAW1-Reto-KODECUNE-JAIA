@@ -2,6 +2,7 @@
         --neon-green: #67e251;
         --dark-blue: #1A1A2E; 
         --text-color: #E0E0E0;
+        
     }
     body{
         margin: 0; 
@@ -128,3 +129,6 @@
     .clearfix {
         clear: both;
     }
+    .neon-word {
+    color: var(--neon-green);
+}

@@ -1,127 +1,189 @@
-    :root {
-        --neon-green: #67e251;
-        --dark-blue: #1A1A2E; 
-        --text-color: #E0E0E0;
-    }
+:root {
+    --neon-green: #67e251;
+    --dark-blue: #1A1A2E; 
+    --text-color: #E0E0E0;
+}
 
-    body{
-        margin: 0; 
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        font-family: 'Roboto', sans-serif;
-        color: var(--text-color);
-        
-    }
-    #background-video {
-        position: fixed;
-        top: 0;      
-        left: 0;     
-        width: 100vw; 
-        height: 100vh; 
-        z-index: -1;
-        object-fit: cover;
-        filter: brightness(0.5);
-    }
-    .main-header,.seccion-eventos,.proximos-eventos{
-        position: relative;
-        z-index: 1;
-    }
-    .logo{
-        position: absolute;
-        left: 50%; 
-        top: 50%;
-        margin-top: -125px;
-        margin-left: -125px;
-    }
-    .logo-img{
-        height: 250px;
-        width: auto;
-        vertical-align: middle;
-        
-    }
-    .main-header{
-        height: 255px;
-        position: relative;
-        
-    }
-    .nav-link-left {
-        position: absolute;
-        right: 50%; 
-        top: 50%;
-        transform: translateY(-50%); 
-        margin-right: 165px; 
-        z-index: 200;
-    }
-    .nav-link-right {
-        position: absolute;
-        left: 50%; 
-        top: 50%;
-        transform: translateY(-50%); 
-        margin-left: 165px; 
-        z-index: 200;
-    }
-    .nav-link-left ul,
-    .nav-link-right ul {
-        list-style: none; 
-        padding: 0;
-        margin: 0;
-    }
-    .nav-link-left ul li,
-    .nav-link-right ul li {
-        display: inline-block; 
-        margin: 0 15px;       
-    }
-    .nav-link-left a,
-    .nav-link-right a {
-        text-decoration: none;
-        font-size: 1.1em;
-        color: #fff;
-        padding: 10px 0;
-        display: block;
-        transition: all 0.2s ease-in-out; 
-    }
-    .nav-link-left a:hover,
-    .nav-link-right a:hover {
-        color: var(--neon-green); 
-        font-weight: bold; 
-        text-shadow: 
-        0 0 5px var(--neon-green),
-        0 0 10px var(--neon-green),
-    }
-    .proximos-eventos{
-        width: 100%;
-        
-    }
-    h1,h3,p{
-        text-align: center;
-    }
-    .eventos{
-    width: 48%; 
-    float: left; 
-    margin-left: 1.2%;
-    margin-bottom: 40px; 
-    box-sizing: border-box; 
-    padding: 10px; 
-    background-color: black;
-    border: 1px solid rgba(252, 252, 252, 0.192); 
-    }
-    .videos { 
+body {
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-color);
+}
+
+.clearfix {
+    clear: both;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#background-video {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.main-header, .seccion-eventos, .mvv-section, footer {
     position: relative;
-    padding-bottom: 56.25%; 
+    z-index: 1;
+}
+
+.main-header {
+    height: 255px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    margin-top: -125px; 
+    margin-left: -125px;
+}
+
+.logo-img {
+    height: 250px;
+    width: 250px; 
+    border-radius: 50%; 
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.nav-link-left {
+    position: absolute;
+    right: 50%; 
+    top: 50%;
+    transform: translateY(-50%); 
+    margin-right: 165px; 
+    z-index: 200;
+}
+.nav-link-right {
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translateY(-50%); 
+    margin-left: 165px; 
+    z-index: 200;
+}
+.nav-link-left ul,
+.nav-link-right ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+.nav-link-left ul li,
+.nav-link-right ul li {
+    display: inline-block; 
+    margin: 0 15px;
+}
+.nav-link-left a,
+.nav-link-right a {
+    font-size: 1.1em;
+    color: #fff;
+    padding: 10px 0;
+    display: block;
+    transition: all 0.2s ease-in-out; 
+}
+.nav-link-left a:hover,
+.nav-link-right a:hover {
+    color: var(--neon-green); 
+    font-weight: bold; 
+    text-shadow: 
+    0 0 5px var(--neon-green),
+    0 0 10px var(--neon-green);
+}
+
+.seccion-eventos {
+    padding-top: 50px;
+}
+
+.proximos-eventos-lista {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.event-row {
+    margin-bottom: 80px; 
+    overflow: hidden; 
+    border: 1px solid rgba(103, 226, 81, 0.2);
+    background-color: #0c1725;
+}
+
+.event-media, .event-info {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px; 
+    height: 100%; 
+    text-align: center; 
+}
+
+.video-left { float: left; }
+.text-right { float: right; padding-left: 50px; }
+.text-left { float: left; padding-right: 50px; }
+.video-right { float: right; }
+
+.event-media { 
+    position: relative;
+    padding-bottom: 28.125%; 
     height: 0;
     overflow: hidden; 
-    margin-bottom: 15px; 
-    border-radius: 5px;
-    }
-    .videos iframe {
+}
+
+.event-media video { 
     position: absolute; 
     top: 0;
     left: 0;
     width: 100%; 
     height: 100%; 
-    }
+    object-fit: cover; 
+}
 
-    .clearfix {
-        clear: both;
-    }
+.event-info h3 {
+    text-align: left;
+    color: var(--neon-green);
+    font-size: 1.8em;
+    margin-top: 0;
+}
+.event-info p {
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.btn-neon {
+    display: inline-block; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    margin-top: 20px;
+    
+    color: var(--neon-green);
+    background-color: transparent;
+    border: 2px solid var(--neon-green);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(103, 226, 81, 0.5); 
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    color: black; 
+    background-color: var(--neon-green); 
+    box-shadow: 
+        0 0 15px var(--neon-green),
+        0 0 25px var(--neon-green),
+        0 0 40px var(--neon-green);
+}
+
