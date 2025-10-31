@@ -1,27 +1,18 @@
     :root {
-        --neon-green: #67e251;
-        --dark-blue: #1A1A2E; 
+        --neon-green: #08DB70;
+        --black: #00000; 
         --text-color: #E0E0E0;
     }
 
-    body{
+    body{ 
         margin: 0; 
         padding: 0;
         width: 100%;
         height: 100%;
-        background-color: #0c1725;
-        font-family: 'Roboto', sans-serif;
+        background-color: #000000;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
         color: var(--text-color);
     }
-    
-  /* Declaración de la fuente */
-@font-face {
-    font-family: 'Rexia Rg';
-    src: url('RexiaRg.woff') format('woff'),
-         url('RexiaRg.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 h1 {
     font-family: 'Rexia Rg', sans-serif;
@@ -46,7 +37,7 @@ h2 {
         
     }
     .main-header{
-        background-color: #0c1725;
+        background-color: #000000;
         height: 130px;
         position: relative;
     }
@@ -114,7 +105,6 @@ h2 {
         0 0 5px var(--neon-green),
         0 0 10px var(--neon-green),
     }
-   /* Banner */
 /* Banner */
 .banner {
     width: 100%;
@@ -153,7 +143,7 @@ h2 {
 /* Botón */
 .banner-overlay .btn {
     background-color: var(--neon-green);
-    color: #0c1725;
+    color: #000000;
     padding: 10px 30px;
     font-size: 18px;
     text-decoration: none;
@@ -163,9 +153,17 @@ h2 {
 }
 
 .banner-overlay .btn:hover {
-    background-color: #4cd033;
+    background-color: #08DB70;
     box-shadow: 0 0 15px var(--neon-green);
 
 }
+form {
+margin:0 auto;
+width: 30%;
 
+}
 
+input[type="text"], input[type="tel"], input[type="date"]{
+    width: 100%;
+    padding:0px;  
+}

@@ -28,14 +28,11 @@
     </header>
 <section class="banner">
     <div class="banner-overlay">
-        <div class="banner-content">
             <h1>Transformando ideas en código</h1>
             <h2>Impulsamos tus proyectos con tecnología de vanguardia</h2>
-            <a href="kode_servicios.html" class="btn">Descubre más</a>
-    </div>
     </div>
 </section>
-<form>
+<form action="C:\xampp\htdocs\miweb\procesar.php">
     <label for="Nombre"> Nombre: </label> <br>
     <input type="text" id="Nombre" name="Nombre"> <br>
     <label for="Apellido"> Apellido: </label> <br>
@@ -43,14 +40,23 @@
     <label for="Empresa"> Empresa: </label> <br>
     <input type="text" id="Nombreempresa" name="Nombre empresa"> <br>
     <label for="Cargo"> Cargo de la empresa: </label> <br>
-    <input type="text" id="Cargo" name="Cargo de la empresa"><br>
+    <input type="text" id="Cargo" name="Cargo"><br>
     <label for="Teléfono"> Teléfono: </label> <br>
     <input type="tel" id="Teléfono" name="Teléfono"> <br>
-    <label for="Fechadeinscripcion"> Fecha de inscripción: </label><br>
-    <input type="date" id="Fechadeinscripcion" name="Fecha de inscripcion"> <br>
+    <label for="Fechai"> Fecha de inscripción: </label><br>
+    <input type="date" id="Fechai" name="Fechai"> <br>
     <p>Elija el tipo de evento al que se quiere suscribir</p>
-    <input type="radio" id="Transformaciondigital" name="Transformaciondigital"> <br>
-    <label for="Transformaciondigital"> Transformación digital</label>
+    <input type="radio" id="Transformaciondigital" name="Tipodeevento" value="Transformaciondigital">
+    <label for="Transformaciondigital"> Transformación digital</label><br>
+    <input type="radio" id="Seguridadenlanube" name="Tipodeevento" value="Seguridadenlanube">
+    <label for="Seguridadenlanube"> Seguridad en la nube</label><br>
+    <input type="radio" id="DiseñoUXUIavanzado" name="Tipodeevento" value="DiseñoUX/UIavanzado">
+    <label for="DiseñoUxUiavanzado">Diseño UX/UI avanzado </label> <br>
+    <input type="radio" id="NetworkingyCoctel" name="tipodeevento" value="NetworkingyCoctel">
+    <label for="NetworkingyCoctel" > Networking y Cóctel </label> <br>
+ 
+    <input type="submit">
+    
 
 </form>
     </body>
