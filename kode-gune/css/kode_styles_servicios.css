@@ -105,6 +105,9 @@
     background-color:black; 
     color: #F7F7F7; 
     }
+    section h3{
+        font-size: 20px;
+    }
     
     .texto {
     width: 48%; 
