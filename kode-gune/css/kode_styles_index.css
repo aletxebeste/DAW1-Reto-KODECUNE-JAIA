@@ -1,8 +1,6 @@
     :root {
-        --neon-green: #67e251;
-        --dark-blue: #1A1A2E; 
+        --neon-green: #08DB70;
         --text-color: #E0E0E0;
-        --text-color-tabla: #000000;
     }
 
     body{
@@ -22,7 +20,7 @@
         height: 100vh; 
         z-index: -1;
         object-fit: cover;
-        filter: brightness(0.5);
+        filter: brightness(0.8);
     }
     .main-header, .hero-section, .content-section {
         position: relative;
@@ -42,19 +40,24 @@
         
     }
     .main-header{
-        height: 255px;
+        height: 130px;
         position: relative;
+        background-color: black;
         
     }
 
     .hero-section {
         height: auto;
-        padding-top: 250px;
+        padding-top: 500px;
         position: relative;
     }
 
     .hero-content h1{
         margin-bottom: 40px;
+        font-size: 60px;
+    }
+    .hero-content p{
+        font-size: 20px;
     }
 
     .hero-content {
@@ -129,12 +132,12 @@
         height: auto;
         padding: 25px 15px;
         box-sizing: border-box; 
-        background-color: var(--text-color); 
-        border: 1px solid var(--neon-green);
-        border-radius: 5px;
+        background-color: black; 
+        border: 1px solid #08DB70;
+        border-radius: 10px;
         margin-bottom: 20px;
         margin-right: 2%;
-        color: var(--text-color-tabla);
+        color: var(--text-color);
         text-align: left;
         
 
@@ -144,6 +147,7 @@
     }
     .tabla h3{
         text-align: center;
+        color:#08DB70
     }
     .tabla p{
         padding-left: 6px;
@@ -159,7 +163,7 @@
     .partners-section h2 {
         font-size: 1.3em;
         margin-bottom: 40px;
-        color: #1A1A2E;
+        color: black;
     }
     .logo-gallery {
         max-width: 1000px;

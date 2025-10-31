@@ -1,6 +1,5 @@
 :root {
     --neon-green: #67e251;
-    --dark-blue: #1A1A2E; 
     --text-color: #E0E0E0;
 }
 
@@ -11,6 +10,10 @@ body {
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--text-color);
+}
+body h1{
+    color: black;
+    padding-bottom: 20px;
 }
 
 .clearfix {
@@ -29,7 +32,7 @@ h1, h2 {
     height: 100vh; 
     z-index: -1;
     object-fit: cover;
-    filter: brightness(0.5);
+    
 }
 
 .main-header, .seccion-eventos, .mvv-section, footer {
@@ -38,8 +41,9 @@ h1, h2 {
 }
 
 .main-header {
-    height: 255px;
+    height: 130px;
     position: relative;
+    background-color: black;
 }
 
 .logo {
@@ -87,6 +91,7 @@ h1, h2 {
 }
 .nav-link-left a,
 .nav-link-right a {
+    text-decoration: none;
     font-size: 1.1em;
     color: #fff;
     padding: 10px 0;
@@ -115,8 +120,8 @@ h1, h2 {
 .event-row {
     margin-bottom: 80px; 
     overflow: hidden; 
-    border: 1px solid rgba(103, 226, 81, 0.2);
-    background-color: #0c1725;
+    border: 2px solid black;
+    background-color:#25292c;
 }
 
 .event-media, .event-info {
@@ -174,7 +179,7 @@ h1, h2 {
     background-color: transparent;
     border: 2px solid var(--neon-green);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(103, 226, 81, 0.5); 
+    box-shadow: 0 0 10px var(--neon-green); 
     transition: all 0.3s ease;
 }
 
