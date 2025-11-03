@@ -26,12 +26,6 @@
  </a>
 </div>
     </header>
-<section class="banner">
-    <div class="banner-overlay">
-            <h1>Transformando ideas en código</h1>
-            <h2>Impulsamos tus proyectos con tecnología de vanguardia</h2>
-    </div>
-</section>
 <form action="C:\xampp\htdocs\miweb\procesar.php">
     <label for="Nombre"> Nombre: </label> <br>
     <input type="text" id="Nombre" name="nombre"> <br>
@@ -46,16 +40,17 @@
     <label for="Fechai"> Fecha de inscripción: </label><br>
     <input type="date" id="Fechai" name="fechai"> <br>
     <p>Elija el tipo de evento al que se quiere suscribir</p>
-    <input type="radio" id="Transformaciondigital" name="tipodeevento" value="Transformaciondigital">
-    <label for="Transformaciondigital"> Transformación digital</label><br>
-    <input type="radio" id="Seguridadenlanube" name="Tipodeevento" value="Seguridadenlanube">
-    <label for="Seguridadenlanube"> Seguridad en la nube</label><br>
-    <input type="radio" id="DiseñoUXUIavanzado" name="Tipodeevento" value="DiseñoUX/UIavanzado">
-    <label for="DiseñoUxUiavanzado">Diseño UX/UI avanzado </label> <br>
-    <input type="radio" id="NetworkingyCoctel" name="tipodeevento" value="NetworkingyCoctel">
-    <label for="NetworkingyCoctel" > Networking y Cóctel </label> <br>
+    <input type="checkbox" id="transformaciondigital" name="eventotrans" value="transformaciondigital">
+    <label for="transformaciondigital"> Transformación digital</label><br>
+    <input type="checkbox" id="seguridadenlanube" name="eventoseg" value="seguridadenlanube">
+    <label for="seguridadenlanube"> Seguridad en la nube</label><br>
+    <input type="checkbox" id="diseñoUXUIavanzado" name="eventodiseño" value="diseñoUX/UIavanzado">
+    <label for="diseñoUxUiavanzado">Diseño UX/UI avanzado </label> <br>
+    <input type="checkbox" id="networkingyCoctel" name="eventonet" value="networkingyCoctel">
+    <label for="networkingyCoctel" > Networking y Cóctel </label> <br>
  
     <input type="submit">
+    <input type ="reset">
     
 
 </form>
