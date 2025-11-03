@@ -33,6 +33,21 @@ h2 {
         height: 250px;
         width: auto;
         vertical-align: middle;
+    
+    }
+    #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+    .main-header, .hero-section, .content-section {
+        position: relative;
+        z-index: 1;
         
     }
     .main-header{
