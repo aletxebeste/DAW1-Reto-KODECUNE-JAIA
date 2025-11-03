@@ -127,6 +127,7 @@ padding: 30px;
 border:2px solid #08DB70;
 background-color:#000000;
 
+
 }
 
 input[type="text"], input[type="tel"], input[type="date"]{
@@ -141,6 +142,17 @@ input[type="reset"] {
 background-color: #08DB70;
 padding: 5px;
 margin-top: 12px;
-text-color:var(--text-color);
+border-color:#08DB70;
 }
 
+input[type="checkbox"]{
+    margin-top: 10px;
+}
+input[type="submit"],
+input[type="reset"] {
+    
+p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color:#08DB70;
+}
