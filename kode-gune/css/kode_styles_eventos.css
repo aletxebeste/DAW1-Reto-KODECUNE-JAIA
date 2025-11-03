@@ -192,7 +192,7 @@ h1, h2 {
         0 0 40px var(--neon-green);
 }
 
-/* --- FOOTER --- */
+
 .site-footer {
     background-color: #ffffff; 
     color: #333333; 
@@ -244,6 +244,7 @@ h1, h2 {
     margin-bottom: 20px;
     font-weight: bold;
     letter-spacing: 0.5px;
+    text-align: left;
 }
 
 .links-section ul {
@@ -265,15 +266,18 @@ h1, h2 {
 
 .social-icons {
     margin-top: -10px;
+    text-align: left; 
 }
+
 .social-icon {
     background-color: transparent;
     color: #000000; 
     border: 1px solid #000000; 
-    width: 30px;
-    height: 30px;
+    width: 30px; 
+    height: 30px; 
     display: inline-block; 
     line-height: 30px; 
+    vertical-align: middle; 
     text-align: center; 
     border-radius: 4px;
     text-decoration: none;
@@ -286,29 +290,14 @@ h1, h2 {
     border-color: #f0f0f0;
 }
 
-.newsletter-section input[type="text"],
-.newsletter-section input[type="email"] {
-    width: 100%;
-    padding: 12px 10px;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
-    background-color: #f8f8f8;
-    color: #333333;
-    font-size: 14px;
-    box-sizing: border-box;
-    border-radius: 4px;
-}
-.subscribe-button {
-    width: 100%;
-    padding: 12px 10px;
-    border: none;
-    background-color: #f7b2c5; 
-    color: #1a1a1a;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 4px;
+.social-icon-img {
+    display: inline-block; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    padding: 2px; 
+    box-sizing: border-box; 
+    vertical-align: top;
 }
 
 .footer-bottom {
@@ -369,10 +358,11 @@ h1, h2 {
         width: 48%; 
         margin-right: 4%;
     }
-    .links-section, .newsletter-section {
+    .links-section {
         margin-right: 0; 
+    }           
     }
-}
+
 @media (max-width: 600px) {
     
     .logo-img {
