@@ -101,7 +101,7 @@ body {
 }
 
 .hero-section {
-    height: 100vh;
+    height: 80vh;
     position: relative;
     padding-top: 0;
 }
@@ -166,18 +166,20 @@ body {
     padding-left: 6px;
 }
 
+
 .partners-section {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     padding: 15px 5px;
     background-color: var(--text-color);
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .partners-section h2 {
     font-size: 1.3em;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     color: black;
 }
 
@@ -196,7 +198,7 @@ body {
 
 .logo-item img {
     max-width: 100%;
-    height: auto;
+    height: 120px;
     opacity: 0.8;
     transition: opacity 0.2s;
 }

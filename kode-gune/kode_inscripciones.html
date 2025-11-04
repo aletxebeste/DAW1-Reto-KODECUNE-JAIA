@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODEGUNE | Transformando Ideas en Código</title>
+    <link rel="stylesheet" href="../kode-gune/css/kode_style_inscripciones.css">
+    </head>
+    <body>
+    <video autoplay muted loop playsinline id="background-video">
+    <source src="../img/VIDEOS WEB/numeros.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+    </video>
+    <header class="main-header">
+    <div class="header-content">
+        <nav class="nav-link-left">
+            <ul>
+                <li><a href="kode_eventos.html">Eventos</a></li>
+                <li><a href="kode_servicios.html">Nuestros Servicios</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-link-right">
+            <ul>
+                <li><a href="kode_about_us.html">Quiénes somos</a></li>
+                <li><a href="kode_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="kode_index.html" class="logo">
+            <img src="../img/logo1.PNG" alt="logo KODEGUNE" class="logo-img">
+        </a>
+    </div>
+    </header>
+        <form action="http://localhost/miweb/procesar.php" method="post">
+            <label for="Nombre"> Nombre: </label> <br>
+            <input type="text" id="nombre" name="nombre"> <br>
+            <label for="Apellidos"> Apellidos: </label> <br>
+            <input type="text" id="apellidos" name="apellidos"> <br>
+            <label for="Email"> Email: </label> <br>
+            <input type="text" id="email" name="email"> <br>
+            <label for="Teléfono"> Teléfono: </label> <br>
+            <input type="tel" id="teléfono" name="telefono"> <br>
+            <label for="Fechai"> Fecha de inscripción: </label><br>
+            <input type="date" id="fechai" name="fechai"> <br>
+                <p>Elija el tipo de evento al que se quiere inscribir: </p>
+            <input type="checkbox" id="eventotrans" name="eventotrans" value="transformaciondigital">
+            <label for="transformaciondigital"> Transformación digital</label><br>
+            <input type="checkbox" id="seguridadenlanube" name="eventoseg" value="seguridadenlanube">
+            <label for="seguridadenlanube"> Seguridad en la nube</label><br>
+            <input type="checkbox" id="diseñoUXUIavanzado" name="eventodiseno" value="diseñoUX/UIavanzado">
+            <label for="diseñoUxUiavanzado">Diseño UX/UI avanzado </label> <br>
+            <input type="checkbox" id="networkingyCoctel" name="eventonet" value="networkingyCoctel">
+            <label for="networkingyCoctel" > Networking y Cóctel </label> <br>
+            <input type="submit">
+            <input type="reset"> 
+        </form>
+    <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content clearfix"> 
+            <div class="footer-section contact-info-section">
+                <h3>CONTACTO</h3> <div class="contact-item"></div>
+                <div class="contact-item">
+                    <span class="icon">📞</span> 943-25-43-17
+                </div>
+                <div class="contact-item">
+                    <span class="icon">✉️</span> kodegune@gmail.com
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📍</span> Av.Libertdad Nº17 1º.Izq
+                </div>
+            </div>
+
+            <div class="footer-section links-section">
+                <h3>ENLACES</h3>
+                <ul>
+                    <li><a href="kode_index.html">Inicio</a></li>
+                    <li><a href="kode_about_us.html">Nosotros</a></li>
+                    <li><a href="kode_servicios.html">Nuestros servicios</a></li>
+                    <li><a href="kode_contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-section">
+                <h3>REDES SOCIALES</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                    <img src="../img/Logos/logo fb.png" alt="Facebook" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                    <img src="../img/Logos/logo x.png" alt="Twitter" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon">
+                    <img src="../img/Logos/logo insta.png" alt="Instagram" class="social-icon-img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section logo-section">
+                <img src="../img/logo3pequeño.png" alt="Facebook" class="social-icon-img">
+            </div> 
+            
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            © All rights reserved 2025
+        </div>
+    </div>
+</footer>
+    </body>
+    </html>

@@ -245,7 +245,7 @@ h1, h2 {
 }
 
 .contact-container {
-    width: 100%;
+    width: 55%;
     max-width: 900px; 
     background-color: rgba(0, 0, 0, 0.7);
     padding: 40px;
@@ -358,7 +358,7 @@ h1, h2 {
 .send-message-btn {
     width: 100%;
     padding: 15px;
-    background-color: var(--main-red);
+    background-color: black;
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -372,7 +372,7 @@ h1, h2 {
 }
 
 .send-message-btn:hover {
-    background-color: #c03040;
+    background-color: var(--neon-green);
 }
 
 @media (max-width: 1024px) {
