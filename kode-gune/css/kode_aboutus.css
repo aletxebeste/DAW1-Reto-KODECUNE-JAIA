@@ -1,0 +1,269 @@
+.logo{
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+    }
+    .logo-img{
+        height: 250px;
+        width: auto;
+        vertical-align: middle;
+    
+    }
+    #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+    .main-header, .hero-section, .content-section {
+        position: relative;
+        z-index: 1;
+        
+    }
+    .main-header{
+        background-color: #000000;
+        height: 130px;
+        position: relative;
+    }
+
+    .hero-content h1{
+        margin-bottom: 40px;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2; 
+        max-width: 800px;
+        padding: 0 20px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-link-left {
+        position: absolute;
+        right: 50%; 
+        top: 50%;
+        transform: translateY(-50%); 
+        margin-right: 165px; 
+        z-index: 200;
+    }
+
+    .nav-link-right {
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        transform: translateY(-50%); 
+        margin-left: 165px; 
+        z-index: 200;
+    }
+
+    .nav-link-left ul,
+    .nav-link-right ul {
+        list-style: none; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-link-left ul li,
+    .nav-link-right ul li {
+        display: inline-block; 
+        margin: 0 15px;       
+    }
+
+    .nav-link-left a,
+    .nav-link-right a {
+        text-decoration: none;
+        font-size: 1.1em;
+        color: #fff;
+        padding: 10px 0;
+        display: block;
+        transition: all 0.2s ease-in-out; 
+    }
+    .nav-link-left a:hover,
+    .nav-link-right a:hover {
+        color: var(--neon-green); 
+        font-weight: bold; 
+        text-shadow: 
+        0 0 5px var(--neon-green),
+        0 0 10px var(--neon-green),
+    }
+
+.philosophy.classic {
+  border: 3px solid #2b6cb0; /* azul */
+  padding: 18px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 18px auto;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.philosophy.classic h2 { 
+  margin-top: 0; 
+}
+
+.contenido {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cuadro,
+.imagen {
+  display: inline-block;     /* Los mantiene lado a lado */
+  vertical-align: middle;    /* Centra verticalmente */
+  margin: 0 25px;            /* Espacio entre ellos */
+}
+
+.cuadro {
+  width: 45%;                /* Más grande */
+  height: 450px;             /* Más alto */
+  max-width: 700px;
+  padding: 40px;
+  border: 2px solid var(--neon-green);
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.imagen {
+  width: 45%;                /* Mismo tamaño que el cuadro */
+  max-width: 700px;
+}
+
+.imagen img {
+  width: 100%;
+  height: 450px;             /* Más alto para igualar al cuadro */
+  object-fit: cover;
+  border: 2px solid var(--neon-green);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* ==== SECCIÓN DE LOS MIEMBROS ==== */
+.equipo {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.container {
+  display: inline-block;     /* Alineados lado a lado */
+  width: 28%;                /* Mismo ancho para los tres */
+  height: 450px;             /* Igual altura */
+  margin: 1%;
+  padding: 40px;
+  background-color: #000;
+  border: 2px solid var(--neon-green);
+  border-radius: 10px;
+  color: #E0E0E0;
+  box-sizing: border-box;
+  vertical-align: top;       /* Alinea la parte superior */
+  text-align: center;
+}
+
+/* ==== ICONO DE LINKEDIN ==== */
+.icono-red {
+  width: 30px;   /* ancho */
+  height: 30px;  /* alto */
+  transition: transform 0.2s ease, filter 0.2s ease;
+  border-radius:50%;
+}
+
+.icono-red:hover {
+  transform: scale(1.1);    /* Efecto al pasar el ratón */
+  filter: brightness(1.5);
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 900px) {
+  .cuadro,
+  .imagen {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
+  }
+
+  .imagen img {
+    height: auto;
+  }
+
+  .container {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    height: auto;
+  }
+}
+.fotosara {
+border-radius:50%;
+   width: 150px;   /* ancho */
+  height: 150px;  /* alto */
+}
+.fotopablo {
+border-radius:50%;
+   width: 150px;   /* ancho */
+  height: 150px;  /* alto */
+}
+.fotoalex {
+border-radius:50%;
+   width: 150px;   /* ancho */
+  height: 150px;  /* alto */
+}
+.logoinstagram {
+  width: 30px;   /* ancho */
+  height: 30px;  /* alto */
+    transition: transform 0.2s ease, filter 0.2s ease;
+border-radius:50%;
+}
+.logotwitter{
+  width: 30px;   /* ancho */
+  height: 30px;  /* alto */
+    transition: transform 0.2s ease, filter 0.2s ease;
+  border-radius:50%;
+}/* ==== ESTILO PARA NOMBRES ==== */
+.container h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0 10px; /* espacio arriba y abajo del nombre */
+  text-align: center; /* centra el nombre */
+}
+
+/* ==== ESTILO PARA EL TEXTO DESCRIPTIVO ==== */
+.container p {
+  font-size: 0.95em;
+  line-height: 1.4em;
+  margin: 10px 0 20px;
+  text-align: center; /* centra el texto */
+}
+
+/* ==== REDES SOCIALES (ALINEADAS EN FILA) ==== */
+.redes {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Cada icono de red social en línea */
+.redes a {
+  display: inline-block;
+  margin: 0 8px; /* separa los iconos */
+}
+h1 {
+  font-size: 25px;
+}
+.cuadro h1 {
+  font-size: 40px;
+}
+.cuadro ul {
+  font-size: 21px;
+}
+
